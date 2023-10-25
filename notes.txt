@@ -1,0 +1,13 @@
+Beyond basic
+The basic
+The purpose of this guide is to help learners set up an express project quick while also introduce the 4 basic operation of a CRUD flow.
+It is in our intention that learners could identify repeated code pattern to get themself familiar to a basic express project flow.
+Beyond the basics
+Learner are not expected but encouraged to try find way to apply D-R-Y in this project. Some areas to look into are :
+A utility function that allow sending consistent responses
+A utility function that allow throwing consistent exceptions/errors
+Split the code by organize route callback functions in controllers/
+Split the code and research on express-validator to handle input validator
+Re-thinking the business logic of each controller. Would it cover all the user behavior? What could go wrong? Should a request cause certain impacts?
+Update http status code.
+Consult your mentor with these questions in mind for a better understanding of the concept

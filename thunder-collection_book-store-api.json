@@ -1,0 +1,79 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "book-store-api",
+  "dateExported": "2022-06-09T09:23:50.947Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "75526bd6-be1c-4364-86d9-d1b592b848fc",
+      "colId": "667ecc3a-7616-42a7-b288-91892b7081ef",
+      "containerId": "",
+      "name": "Post a book",
+      "url": "http://localhost:8000/books",
+      "method": "POST",
+      "sortNum": 5000,
+      "created": "2022-06-09T08:09:52.876Z",
+      "modified": "2022-06-09T08:44:58.931Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"author\": \"Tuan Hoang\",\n  \"country\": \"Viet Nam\",\n  \"imageLink\": \"images/things-fall\",\n  \"language\": \"Vietnamese\",\n  \"link\": \"https://en.wikipedia.org/wiki/Things_Fall_Apart\\n\",\n  \"pages\": 209,\n  \"title\": \"Things Fall Apart\",\n  \"year\": 1958\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "2357ce2e-7a3c-4049-a3f0-95bbe01044c1",
+      "colId": "667ecc3a-7616-42a7-b288-91892b7081ef",
+      "containerId": "",
+      "name": "Get books",
+      "url": "http://localhost:8000/books?page=1&limit=30&author=Unknown",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2022-06-09T07:17:05.543Z",
+      "modified": "2022-06-09T09:02:49.243Z",
+      "headers": [],
+      "params": [
+        { "name": "page", "value": "1", "isPath": false },
+        { "name": "limit", "value": "30", "isPath": false },
+        { "name": "author", "value": "Unknown", "isPath": false }
+      ],
+      "tests": []
+    },
+    {
+      "_id": "f3ac7c91-1997-446b-8d98-5118e3062958",
+      "colId": "667ecc3a-7616-42a7-b288-91892b7081ef",
+      "containerId": "",
+      "name": "Update a book",
+      "url": "http://localhost:8000/books/8F627C92410",
+      "method": "PUT",
+      "sortNum": 20000,
+      "created": "2022-06-09T07:18:29.202Z",
+      "modified": "2022-06-09T08:17:33.016Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n\"author\": \"Updated\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "a7920ed5-77d6-4042-bdcb-6491ccca72a6",
+      "colId": "667ecc3a-7616-42a7-b288-91892b7081ef",
+      "containerId": "",
+      "name": "Delete a book",
+      "url": "http://localhost:8000/books/8F627C92410",
+      "method": "DELETE",
+      "sortNum": 30000,
+      "created": "2022-06-09T07:57:30.050Z",
+      "modified": "2022-06-09T07:57:49.646Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    }
+  ]
+}
